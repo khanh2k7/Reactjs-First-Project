@@ -1,14 +1,22 @@
 import React from 'react';
 
 type NqkProps = {
-    name: string;
-    age: number;
+    names: {
+        name: string;
+        age: number;
+    }[]
 }
 
 export const Loading = (props: NqkProps) => {
     return (
         <div>
-            {props.name} - {props.age}
+           {props.names.map(name => {
+            return (
+                <div>
+                    {name.name} - {name.age}
+                </div>
+            );
+           })}
         </div>
     );
 };

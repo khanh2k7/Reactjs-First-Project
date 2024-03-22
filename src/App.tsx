@@ -4,12 +4,28 @@ import './App.css';
 import { Loading } from './components/Loading/index';
 
 function App() {
+
+  const Listnames = [
+    {
+      name: 'Khanh',
+      age: 30
+    },
+    {
+      name: 'Nguyễn',
+      age: 30
+    },
+    {
+      name: 'Nguyễn 1',
+      age: 30
+    }
+  ];
+
   return (
     <div className="App">
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
         <p>
-           <Loading age={(10)} name="khánh" />
+           <Loading names={Listnames} />
         </p>
         <a
           className="App-link"
