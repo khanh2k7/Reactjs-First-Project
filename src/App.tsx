@@ -1,6 +1,7 @@
 import React from 'react';
 import logo from './logo.svg';
 import './App.css';
+import { Loading } from './components/Loading/index';
 
 function App() {
   return (
@@ -8,7 +9,7 @@ function App() {
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
         <p>
-          Nguyễn Quốc Khánh
+           <Loading age={(10)} name="khánh" />
         </p>
         <a
           className="App-link"
